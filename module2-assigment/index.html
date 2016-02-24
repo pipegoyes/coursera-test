@@ -7,21 +7,22 @@
   <style>
   * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   h1{
     text-align: center;
+    padding: 20px 0 20px 0;
   }
 
   section{
     position: relative;
-    border: solid thin black;
+    border: solid 5px black;
     background-color: gray;
-    
+    overflow: auto;
   }
-  section > .section-title{
+  section > h3{
     /*loat: right;*/
     position: absolute;
     top: 0;
@@ -29,6 +30,7 @@
     width: 100px;
     background-color: red;
     padding: 5px;
+    text-align: center;
   }
 
   p{
@@ -38,11 +40,13 @@
   }
   .row{
     width: 100%;
+    overflow: auto;
   }
 
   @media (min-width: 992px){
     .col-lg-4{
     width: 33%;
+    padding: 10px;
     float: left;
 
   }
@@ -51,9 +55,11 @@
     .col-md-6{
     width: 50%;   
     float: left; 
+    padding: 10px;
   }
-  .row > section:nth-child(3){
+  .row > div:nth-child(3){
     width: 100%;
+    
   }
 }
   @media (max-width: 767px)
@@ -68,39 +74,41 @@
 <h1>My Assigment 2</h1>
 <div class="container">
   <div class="row">
-    <section class="col-lg-4 col-md-6 col-sm-12">
-      <div class="section-title">Section title 1</div>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,f
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 1
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <section>
+      <h3>Section 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <section class="col-lg-4 col-md-6 col-sm-12">
-      
-        <div class="section-title">Section title 2</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,f
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 1
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <section>
+      <h3>Section 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <section class="col-lg-4 col-md-6 col-sm-12">
-      
-        <div class="section-title">Section title 3</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,f
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 1
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <section>
+      <h3>Section 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
+  </div>
+    
+
   </div>
 </div>
 
